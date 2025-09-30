@@ -11,9 +11,9 @@ function mainBar() {
                 <img src={Logo} alt="" />
                 <label className='hidden lg:block'>CapStack</label>
             </figure>
-            <NavLink>
+            <a href='https://capstack.netlify.app/SignUp'>
                 <li>Get Started <MoveRight/></li>
-            </NavLink>
+            </a>
             </ul>
         </nav>
     </aside>
