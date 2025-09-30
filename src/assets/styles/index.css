@@ -1,0 +1,257 @@
+@import "tailwindcss";
+
+@theme{
+    --color-secondaryBlack:#231F20;
+    --color-rosePink:#FF6060;
+    --color-ascentViolet:#4B3381; 
+    --color-ascentBlue:#667EEA;
+    --color-secondaryPink:#DE579A;
+    --color-secondayViolet:#4E3382;
+}
+@layer components{
+    body{
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        @apply
+        bg-black
+        text-white  
+        
+        ;
+    }
+}
+@layer components{
+    h1{
+        @apply
+        text-xl
+        font-semibold
+        ;
+    }
+}
+@layer components{
+    label{
+        @apply
+        text-lg
+        font-semibold
+        ;
+    }
+}
+@layer components{
+    nav{
+        @apply
+        bg-gray-300/50
+        rounded-3xl
+        sticky
+        top-0
+        backdrop-blur-lg
+        backdrop-saturate-[180%]
+        ;
+    }
+}
+@layer components{
+    nav ul{
+        @apply
+        bg-transparent
+        flex-1
+        flex-row
+        w-full  
+        items-center
+        flex 
+        gap-5
+        justify-between
+        py-1
+        px-3
+        ;
+    }
+}
+@layer components{
+    nav ul li{
+        @apply
+        capitalize
+        bg-gradient-to-l from-secondaryPink to-secondayViolet/80
+        p-2
+        rounded-lg
+        flex
+        gap-2
+        font-semibold
+        
+        ;
+    }
+}
+@layer components{
+    .logo{
+        @apply
+        size-14
+        bg-ascentViolet
+        rounded-full
+        flex
+        items-center
+        gap-2
+        ;
+    }
+
+}
+@layer components{
+    .home{
+        @apply
+        w-full
+        flex
+        flex-col
+        items-center
+        justify-center
+        lg:justify-start
+        lg:max-w-[85%]
+        bg-[url(../images/mainBg.png)]
+        bg-cover
+        bg-center
+        lg:grid
+        lg:grid-cols-2
+        rounded-2xl
+        p-4
+       
+        ;
+    }
+}
+@layer components{
+    button{
+        @apply
+        cursor-pointer
+        ;
+    }
+}
+@layer components{
+    .primary-button{
+        @apply
+        bg-rosePink
+        border-2
+        border-rosePink
+        p-2
+        rounded-lg
+        hover:bg-rosePink/50
+        duration-300
+        ;
+    }
+}
+
+@layer components{
+    .whyUs-Layout{
+        @apply
+        grid
+        lg:grid-cols-3
+        items-stretch
+        mx-2
+        gap-1
+        lg:gap-4
+        ;
+    }
+}
+@layer components{
+    .span-box{
+        @apply
+        h-full
+        max-h-[80%]
+        bg-secondaryBlack/60
+        border-2
+        border-secondaryBlack
+        rounded-2xl
+        absolute
+        w-full
+        bottom-0
+        -z-10
+        ;
+    }
+}
+@layer components{
+    .whyUs-card{
+        @apply
+        relative
+        p-2
+        flex
+        flex-col
+        items-center
+        justify-center
+        text-center
+        overflow-hidden
+        h-full
+        ;
+    }
+}
+@layer components{
+    .icon-bg{
+        @apply
+        bg-rosePink/30
+        border-2
+        border-rosePink
+        p-2
+        rounded-full
+        ;
+    }
+}
+@layer components{
+    .htgs-card{
+        @apply
+        h-full
+        bg-secondaryBlack/60
+        border-2
+        border-secondaryBlack
+        rounded-2xl
+        p-2
+        relative
+        overflow-hidden
+       
+        ;
+    }
+}
+@layer components{
+    .step-icon{
+        @apply
+        bg-ascentBlue
+        py-2
+        px-4
+        rounded-full
+        font-semibold
+        ;
+    }
+}
+@layer components{
+    .devs-card{
+        @apply
+        relative
+        flex
+        flex-col
+        justify-end
+        items-end
+        max-w-[250px]
+        overflow-hidden
+        ;
+    }
+}
+@layer components{
+    .devs-span-box{
+        @apply
+        h-full
+        max-h-[80%]
+        bg-radial from-secondayViolet to-secondaryPink
+        rounded-2xl
+        absolute
+        w-full
+        bottom-0
+        -z-10
+        ;
+    }
+}
+@layer components{
+    .devs-card article{
+        @apply
+        absolute
+        bg-secondaryBlack/60
+        text-center
+        rounded-lg
+        my-1
+        mx-2
+        backdrop-blur-xl
+        backdrop-saturate-[200%]
+        overflow-hidden
+        p-1
+        ;
+    }
+}
