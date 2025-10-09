@@ -1,5 +1,6 @@
 import React from 'react'
 import MockUp from '../../assets/images/mockup-screen.png'
+import { Link } from 'react-router'
 function Home() {
   return (
     <section className='flex-1 flex mx-2 items-center justify-center' >
@@ -8,7 +9,9 @@ function Home() {
             <h1 className='text-4xl'>Build Your Perfect Project Blueprint</h1>
             <span className='grid gap-2'>
             <p>CapStack is an AI-powered tool that revolutionizes how individuals and teams generate project plans.</p>
+            <Link  href='https://capstack.netlify.app/'>
             <button className='primary-button w-full  lg:w-fit font-semibold px-5'>Start Building</button>
+            </Link>
             </span>
         </article>
         <div className='flex justify-center items-center text-center'>
