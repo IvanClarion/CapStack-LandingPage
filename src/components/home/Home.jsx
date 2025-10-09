@@ -9,7 +9,7 @@ function Home() {
             <h1 className='text-4xl'>Build Your Perfect Project Blueprint</h1>
             <span className='grid gap-2'>
             <p>CapStack is an AI-powered tool that revolutionizes how individuals and teams generate project plans.</p>
-            <Link  href='https://capstack.netlify.app/'>
+            <Link  to='https://capstack.netlify.app'>
             <button className='primary-button w-full  lg:w-fit font-semibold px-5'>Start Building</button>
             </Link>
             </span>
