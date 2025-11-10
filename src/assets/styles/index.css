@@ -220,7 +220,7 @@
         flex-col
         justify-end
         items-end
-        lg:max-w-[250px]
+        max-w-[250px]
         w-full
         
         ;

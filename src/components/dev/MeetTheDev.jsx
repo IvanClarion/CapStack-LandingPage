@@ -35,7 +35,7 @@ function MeetTheDev() {
             </span>
           </figure>
           <article>
-            <label>Cross-Platform Developer</label>
+            <label>App Developer</label>
             <p className='text-sm text-gray-200'>Ivan Dale Clarion</p>
           </article>
         </div>
