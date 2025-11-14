@@ -44,6 +44,8 @@
         top-0
         backdrop-blur-lg
         backdrop-saturate-[180%]
+        lg:max-w-[85%]
+        w-full
         ;
     }
 }

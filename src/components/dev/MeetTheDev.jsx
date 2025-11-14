@@ -2,9 +2,10 @@ import React from 'react'
 import DevsSample from '../../assets/images/devs-nobg.png'
 import Ivan from '../../assets/images/ivan.png'
 import Rye from '../../assets/images/ryes.png'
+import Kirk from '../../assets/images/kirk2.png'
 import { Link } from 'react-router'
-import { Linkedin } from 'lucide-react'
-
+import { Code, FolderKanban, MonitorSmartphone } from 'lucide-react'
+import { motion } from 'motion/react'
 function MeetTheDev() {
   return (
     <section>
@@ -14,8 +15,9 @@ function MeetTheDev() {
 
       {/* Horizontal scroll + snap on small screens; centered row on lg+ */}
       <div
-        className='flex flex-row gap-5 lg:gap-10
+        className='flex flex-row gap-5 lg:gap-7
                    w-full
+                   items-stretch
                    overflow-x-auto lg:overflow-visible
                    snap-x snap-mandatory lg:snap-none
                    scroll-smooth
@@ -23,13 +25,17 @@ function MeetTheDev() {
                     lg:px-0 lg:mx-auto'
         aria-label='Meet the Team scroller'
       >
-        <div className='devs-card shrink-0 snap-center'>
+        <motion.div className='devs-card shrink-0 snap-center'
+        initial={{opacity:0, y:20}}
+        whileInView={{opacity:1, y:0}}
+        transition={{duration:1, ease:'easeInOut'}}
+        >
           <figure>
             <img src={Ivan} alt="" />
             <span className='devs-span-box'>
               <Link className='w-full flex justify-end p-2'>
                 <div className='p-2 bg-secondaryBlack/60 rounded-full w-fit backdrop-blur-xl backdrop-saturate-[200%] flex justify-end'>
-                  <Linkedin/>
+                  <MonitorSmartphone/>
                 </div>
               </Link>
             </span>
@@ -38,15 +44,19 @@ function MeetTheDev() {
             <label>App Developer</label>
             <p className='text-sm text-gray-200'>Ivan Dale Clarion</p>
           </article>
-        </div>
+        </motion.div>
 
-        <div className='devs-card shrink-0 snap-center'>
+        <motion.div className='devs-card shrink-0 snap-center'
+        initial={{opacity:0, y:20}}
+        whileInView={{opacity:1, y:0}}
+        transition={{duration:1, ease:'easeInOut', delay:0.3}}
+        >
           <figure>
             <img src={Rye} alt="" />
             <span className='devs-span-box'>
               <Link className='w-full flex justify-end p-2'>
                 <div className='p-2 bg-secondaryBlack/60 rounded-full w-fit backdrop-blur-xl backdrop-saturate-[200%] flex justify-end'>
-                  <Linkedin/>
+                  <FolderKanban/>
                 </div>
               </Link>
             </span>
@@ -55,15 +65,20 @@ function MeetTheDev() {
             <label>Project Manager</label>
             <p className='text-sm text-gray-200'>Nicholas Rye Laoguico</p>
           </article>
-        </div>
+        </motion.div>
 
-        <div className='devs-card shrink-0 snap-center'>
+        <motion.div className='devs-card shrink-0 snap-center'
+        
+        initial={{opacity:0, y:20}}
+        whileInView={{opacity:1, y:0}}
+        transition={{duration:1, ease:'easeInOut', delay:0.6}}
+        >
           <figure>
-            <img src={Ivan} alt="" />
+            <img src={Kirk} alt=""  />
             <span className='devs-span-box'>
               <Link className='w-full flex justify-end p-2'>
                 <div className='p-2 bg-secondaryBlack/60 rounded-full w-fit backdrop-blur-xl backdrop-saturate-[200%] flex justify-end'>
-                  <Linkedin/>
+                  <Code/>
                 </div>
               </Link>
             </span>
@@ -72,7 +87,7 @@ function MeetTheDev() {
             <label>Web Developer</label>
             <p className='text-sm text-gray-200'>Kirk Justin Mercado</p>
           </article>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

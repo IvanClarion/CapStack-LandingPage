@@ -4,7 +4,7 @@ import Logo from '../../assets/images/logo.svg'
 import { MoveRight } from 'lucide-react'
 function mainBar() {
   return (
-    <aside className='m-2 sticky z-20 top-2'>
+    <aside className='m-2 flex items-center self-center justify-center sticky z-20 top-2'>
         <nav>
             <ul>
             <figure className='logo'>
