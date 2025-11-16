@@ -4,8 +4,9 @@ import Ivan from '../../assets/images/ivan.png'
 import Rye from '../../assets/images/ryes.png'
 import Kirk from '../../assets/images/kirk2.png'
 import { Link } from 'react-router'
-import { Code, FolderKanban, MonitorSmartphone } from 'lucide-react'
+import { Code, FolderKanban, MonitorSmartphone,Palette } from 'lucide-react'
 import { motion } from 'motion/react'
+import Homer from '../../assets/images/homer2.0.png'
 function MeetTheDev() {
   return (
     <section>
@@ -63,7 +64,7 @@ function MeetTheDev() {
           </figure>
           <article>
             <label>Project Manager</label>
-            <p className='text-sm text-gray-200'>Nicholas Rye Laoguico</p>
+            <p className='text-sm text-gray-200'>Nicholas Rye Lao Guico</p>
           </article>
         </motion.div>
 
@@ -88,7 +89,32 @@ function MeetTheDev() {
             <p className='text-sm text-gray-200'>Kirk Justin Mercado</p>
           </article>
         </motion.div>
+
+        <motion.div className='devs-card shrink-0 snap-center'
+        
+        initial={{opacity:0, y:20}}
+        whileInView={{opacity:1, y:0}}
+        transition={{duration:1, ease:'easeInOut', delay:0.9}}
+        >
+          <figure>
+            <img src={Homer} alt=""  />
+            <span className='devs-span-box'>
+              <Link className='w-full flex justify-end p-2'>
+                <div className='p-2 bg-secondaryBlack/60 rounded-full w-fit backdrop-blur-xl backdrop-saturate-[200%] flex justify-end'>
+                  <Palette/>
+                </div>
+              </Link>
+            </span>
+          </figure>
+          <article>
+            <label>UI/UX Designer</label>
+            <p className='text-sm text-gray-200'>Homer Benedict Hambre</p>
+          </article>
+        </motion.div>
       </div>
+
+      
+      
     </section>
   )
 }
