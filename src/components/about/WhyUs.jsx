@@ -69,7 +69,7 @@ function WhyUs() {
           viewport={{once:true}}
           transition={{duration:0.5,delay:0.3}}
          >
-         <h1>Can Convert you Ideas to Files</h1>
+         <h1>Convert Your Ideas to Files</h1>
          <p className='text-sm'>Do you want to convert your ideas to file? No problemo amigoss!! CapStack can convert your ideas with our convert to pdf file feature. </p>
         </motion.article>
       </div>
