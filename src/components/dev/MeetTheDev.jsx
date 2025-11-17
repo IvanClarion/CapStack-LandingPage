@@ -29,6 +29,26 @@ function MeetTheDev() {
         <motion.div className='devs-card shrink-0 snap-center'
         initial={{opacity:0, y:20}}
         whileInView={{opacity:1, y:0}}
+        transition={{duration:1, ease:'easeInOut', delay:0.3}}
+        >
+          <figure>
+            <img src={Rye} alt="" />
+            <span className='devs-span-box'>
+              <Link className='w-full flex justify-end p-2'>
+                <div className='p-2 bg-secondaryBlack/60 rounded-full w-fit backdrop-blur-xl backdrop-saturate-[200%] flex justify-end'>
+                  <FolderKanban/>
+                </div>
+              </Link>
+            </span>
+          </figure>
+          <article>
+            <label>Project Manager</label>
+            <p className='text-sm text-gray-200'>Rye Nicholas Lao Guico</p>
+          </article>
+        </motion.div>
+        <motion.div className='devs-card shrink-0 snap-center'
+        initial={{opacity:0, y:20}}
+        whileInView={{opacity:1, y:0}}
         transition={{duration:1, ease:'easeInOut'}}
         >
           <figure>
@@ -47,26 +67,7 @@ function MeetTheDev() {
           </article>
         </motion.div>
 
-        <motion.div className='devs-card shrink-0 snap-center'
-        initial={{opacity:0, y:20}}
-        whileInView={{opacity:1, y:0}}
-        transition={{duration:1, ease:'easeInOut', delay:0.3}}
-        >
-          <figure>
-            <img src={Rye} alt="" />
-            <span className='devs-span-box'>
-              <Link className='w-full flex justify-end p-2'>
-                <div className='p-2 bg-secondaryBlack/60 rounded-full w-fit backdrop-blur-xl backdrop-saturate-[200%] flex justify-end'>
-                  <FolderKanban/>
-                </div>
-              </Link>
-            </span>
-          </figure>
-          <article>
-            <label>Project Manager</label>
-            <p className='text-sm text-gray-200'>Nicholas Rye Lao Guico</p>
-          </article>
-        </motion.div>
+        
 
         <motion.div className='devs-card shrink-0 snap-center'
         
